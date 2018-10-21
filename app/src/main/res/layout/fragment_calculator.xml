@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorLayout"
+    android:orientation="vertical"
+    tools:context=".CalculatorFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/tvSecond"
+        android:layout_width="match_parent"
+        android:layout_height="83dp"
+        android:gravity="bottom|right"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvSymbol"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:gravity="center_vertical"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="bottom|right"
+        android:textColor="@android:color/black"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnClear"
+
+            style="@style/ButtonActionCalculate"
+            android:text="DEL" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            style="@style/ButtonActionCalculate"
+            android:src="@drawable/baseline_backspace_black_36dp"
+            android:scaleType="center"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSeven"
+            style="@style/ButtonNumCalculate"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/btnEight"
+            style="@style/ButtonNumCalculate"
+
+            android:text="8" />
+
+        <Button
+            android:id="@+id/btnNine"
+            style="@style/ButtonNumCalculate"
+
+            android:text="9" />
+
+        <Button
+            android:id="@+id/btnDelenie"
+            style="@style/ButtonActionCalculate"
+            android:text="/" />
+
+        android:text="Button" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnFour"
+
+            style="@style/ButtonNumCalculate"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/btnFive"
+
+            style="@style/ButtonNumCalculate"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/btnSix"
+
+            style="@style/ButtonNumCalculate"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/btnUmnojenie"
+
+            style="@style/ButtonActionCalculate"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnOne"
+
+            style="@style/ButtonNumCalculate"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/btnTwo"
+
+            style="@style/ButtonNumCalculate"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/btnThree"
+            style="@style/ButtonNumCalculate"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/btnVichitanie"
+            style="@style/ButtonActionCalculate"
+            android:text="-" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDot"
+            style="@style/ButtonNumCalculate"
+            android:text="." />
+
+        <Button
+            android:id="@+id/btnZero"
+            style="@style/ButtonNumCalculate"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btnResult"
+            style="@style/ButtonNumCalculate"
+            android:text="=" />
+
+        <Button
+            android:id="@+id/btnSlojenie"
+            style="@style/ButtonActionCalculate"
+            android:text="+" />
+    </LinearLayout>
+
+</LinearLayout>
