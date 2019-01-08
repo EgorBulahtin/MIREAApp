@@ -25,6 +25,10 @@
             android:id="@+id/nav_calculator"
             android:icon="@drawable/calclator"
             android:title="Calculator" />
+        <item
+            android:id="@+id/nav_browser"
+            android:icon="@drawable/browser"
+            android:title="Browser" />
     </group>
 
     <item android:title="Communicate">

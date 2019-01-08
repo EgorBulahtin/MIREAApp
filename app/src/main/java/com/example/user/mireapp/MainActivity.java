@@ -64,12 +64,8 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
         }
@@ -84,12 +80,14 @@ public class MainActivity extends AppCompatActivity
         int id = item.getItemId();
 
         Fragment fragment = null;
-        Class fragmentClass = CalculatorFragment.class;
+        Class fragmentClass = null;
 
-//        if (id == R.id.nav_camera) {
-//            // Handle the camera action
-//        } else if (id == R.id.nav_gallery) {
-//
+        if (id == R.id.nav_calculator) {
+            fragmentClass = CalculatorFragment.class;
+
+        } else if (id == R.id.nav_browser) {
+            fragmentClass = BrowserFragment.class;
+        }
 //        } else if (id == R.id.nav_slideshow) {
 //
 //        } else if (id == R.id.nav_manage) {
@@ -111,7 +109,11 @@ public class MainActivity extends AppCompatActivity
         }
 
         FragmentManager fragmentManager = getSupportFragmentManager();
-        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+        try {
+            fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
+        }catch (Exception e){
+            e.printStackTrace();
+        }
         item.setChecked(true);
         setTitle(item.getTitle());
 
