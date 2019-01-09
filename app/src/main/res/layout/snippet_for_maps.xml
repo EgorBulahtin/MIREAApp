@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvForMapsName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Мирэа"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvForMapsYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="цуауцаауца" />
+
+    <TextView
+        android:id="@+id/tvForMapsAdress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="654984984" />
+
+    <TextView
+        android:id="@+id/tvForMapsCoord"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="654уца65уц"
+        android:textStyle="italic" />
+</LinearLayout>

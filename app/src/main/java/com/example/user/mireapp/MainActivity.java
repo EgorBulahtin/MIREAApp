@@ -1,3 +1,8 @@
+//*****************************************************************************
+/***********************Булахтин Егор Юрьевич, БСБО-01-16**********************
+ *
+ */
+//*****************************************************************************
 package com.example.user.mireapp;
 
 import android.net.Uri;
@@ -88,18 +93,10 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_browser) {
             fragmentClass = BrowserFragment.class;
         }
-//        } else if (id == R.id.nav_slideshow) {
-//
-//        } else if (id == R.id.nav_manage) {
-//
-//        } else if (id == R.id.nav_share) {
-//
-//        } else if (id == R.id.nav_send) {
-//
-//        }
-        //        } else if (id == R.id.nav_calculator) {
-//
-//        }
+        else if (id == R.id.nav_maps) {
+            fragmentClass = GoogleMapsFragment.class;
+        }
+
 
         try {
             fragment = (Fragment) fragmentClass.newInstance();
